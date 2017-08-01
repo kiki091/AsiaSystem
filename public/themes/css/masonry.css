@@ -1,0 +1,141 @@
+
+#nav-icon {
+	width: 30px;
+	height: 30px;
+  display: block;
+	position: relative;
+	margin-right: 7%;
+	margin-top: 8px;
+	/*padding-right: 1%;*/
+	float: right;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+#nav-icon3 span {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: #8c8c8c;
+	border-radius: 6px;
+	opacity: 1;
+	left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+	top: 0px;
+}
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+	top: 10px;
+}
+
+#nav-icon3 span:nth-child(4) {
+	top: 20px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+	top: 10px;
+	width: 0%;
+	left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+	top: 10px;
+	width: 0%;
+	left: 50%;
+}
+
+.topnav {
+  display: none;
+}
+
+.topnav.responsive {
+	display: block;
+	clear: both;
+	padding: 0;
+	height: 160px;
+}
+
+ul.topnav.responsive {
+	list-style: none;
+	font-family: 'Raleway', 'sans-serif';
+	float: left;
+	margin-left: 7%;
+	/*padding-left: 2%;*/
+	margin-top: 0;
+	width: 85%;
+	margin-bottom: 0;
+}
+
+ul.topnav.responsive li {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #c6c6c6;
+}
+
+ul.topnav.responsive li a {
+	text-decoration: none;
+	color: #8c8c8c;
+}
+
+ul.topnav.responsive li a:hover {
+	color: #7EBEA3;
+}
+
+#grid {
+  overflow: hidden;
+/*   box-sizing: border-box; */
+  margin: 0 auto !important;
+  width: 100%;
+}
+
+.grid-item {
+  width: 220px;
+  float: left;
+  overflow: hidden;
+}
+
+.grid-item img { 
+  display: block;
+  float: left;
+  width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.grid-item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
